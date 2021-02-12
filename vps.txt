@@ -1,0 +1,9 @@
+xhToxj7HWSj4gZQAr&gK4mnw
+
+apt update&&apt dist-upgrade -y&&apt install build-essential git python -y
+
+git clone -b akkariiin/master https://github.com/code4cc/shadowsocksr.git
+
+cd shadowsocksr/ && ./initcfg.sh
+
+python mujson_mgr.py -a -u a -p 443 -k jTQLLHssk0oMDM6Wdn -m none -O auth_sha1_v4 -o http_simple
