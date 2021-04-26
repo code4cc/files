@@ -4,6 +4,6 @@ aZAmYDhf8kMagabO
 passwd
 eV%Y$n5C8!srNhoifPau
 
-apt update&&apt dist-upgrade -y&&apt install wget git nginx curl cron socat libcap2-bin xz-utils nano python -y
+apt update&&apt dist-upgrade -y&&apt install wget git nginx curl cron socat libcap2-bin xz-utils nano python -y&&systemctl enable cron
 
-systemctl enable cron
+wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh"&&chmod +x tcp.sh&&./tcp.sh
