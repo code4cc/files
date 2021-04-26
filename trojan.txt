@@ -1,0 +1,9 @@
+root
+aZAmYDhf8kMagabO
+
+passwd
+eV%Y$n5C8!srNhoifPau
+
+apt update&&apt dist-upgrade -y&&apt install wget git nginx curl cron socat libcap2-bin xz-utils nano python -y
+
+systemctl enable cron
