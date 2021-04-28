@@ -1,0 +1,33 @@
+root
+aZAmYDhf8kMagabO
+
+passwd
+eV%Y$n5C8!srNhoifPau
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+安装必备软件
+apt update &&apt dist-upgrade -y
+
+apt install curl git nginx python vim wget -y
+
+mkdir script &&cd sc*/ &&wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" &&chmod +x tcp.sh &&./tcp.sh
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+安装SSR并设置开机启动
+cd &&git clone -b akkariiin/master https://github.com/code4cc/Akkariiin-shadowsocksr.git &&cd Ak*/ &&bash initcfg.sh &&vim userapiconfig.py
+
+python mujson_mgr.py -a -u a -p 32859 -k jTQLLHs8k0oMDM6Wdn -m aes-128-cfb -O auth_chain_a  -o tls1.2_ticket_fastauth
+
+echo '[Unit]
+Description=SSR
+[Service]
+ExecStart=/root/Akkariiin-shadowsocksr/run.sh
+[Install]
+WantedBy=multi-user.target' > /etc/systemd/system/SSR.service &&systemctl enable SSR.service
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+安装V2ray
+cd &&bash <(curl -sL https://s.hijk.art/v2ray.sh)
+安装V2ray-VLESS+WS+TLS(可过cdn)
+tr0jan.icu
+ 
