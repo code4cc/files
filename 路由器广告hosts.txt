@@ -277,6 +277,7 @@
 127.0.0.1 api9.tuisong.baidu.com
 127.0.0.1 apiconfig.adwo.com
 127.0.0.1 api-flow.flyme.cn
+127.0.0.1 app.acm.dzwww.com
 127.0.0.1 app.waps.cn
 127.0.0.1 app.wapx.cn
 127.0.0.1 appc.baidu.com
@@ -354,8 +355,10 @@
 127.0.0.1 c-adash.m.taobao.com
 127.0.0.1 canvas.gdt.qq.com
 127.0.0.1 carbonads.net
+127.0.0.1 cas.hk.cn.criteo.com
 127.0.0.1 cas.pxl.ace.advertising.com
 127.0.0.1 cast.ra.icast.cn
+127.0.0.1 cat.hk.cn.criteo.com
 127.0.0.1 cb.alimama.cn
 127.0.0.1 cb.baidu.com
 127.0.0.1 cb.l.qq.com
@@ -1029,6 +1032,7 @@
 127.0.0.1 stats.dmp.ghac.cn
 127.0.0.1 stdl.qq.com
 127.0.0.1 strategy.beacon.qq.com
+127.0.0.1 strip.taobaocdn.com
 127.0.0.1 sugs.m.sm.cn
 127.0.0.1 susapi.dev.surepush.cn
 127.0.0.1 sw.mobile.sogou.com
