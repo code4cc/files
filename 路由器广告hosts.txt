@@ -290,7 +290,6 @@
 127.0.0.1 agn.aty.sohu.com
 127.0.0.1 aiseet.aa.atianqi.com
 127.0.0.1 akamai.smartadserver.com
-127.0.0.1 alicdnv2.sitemonitor.cn.miaozhen.com
 127.0.0.1 als.baidu.com
 127.0.0.1 ama.adwo.com
 127.0.0.1 amdc.m.taobao.com
@@ -469,7 +468,6 @@
 127.0.0.1 ckmap.mediav.com
 127.0.0.1 cl2.webterren.com
 127.0.0.1 cloud.xdrig.com
-127.0.0.1 cloudservice22.kingsoft-office-service.com
 127.0.0.1 cm.adkmob.com
 127.0.0.1 cm.admaster.com.cn
 127.0.0.1 cm.baidu.com
@@ -1111,7 +1109,6 @@
 127.0.0.1 v2.da.mgtv.com
 127.0.0.1 v2.gdt.qq.com
 127.0.0.1 v3-ad.ixigua.com
-127.0.0.1 vali.cp31.ott.cibntv.net.302.myalicdn.com
 127.0.0.1 vamaker.cm.admaster.com.cn
 127.0.0.1 vbaof.admaster.com.cn
 127.0.0.1 vd.l.qq.com
@@ -1142,7 +1139,6 @@
 127.0.0.1 w.l.qq.com
 127.0.0.1 w.ymapp.com
 127.0.0.1 wangmeng.baidu.com
-127.0.0.1 watch.advertising.speed.cdn.vip.xunlei.com
 127.0.0.1 wbapp.mobile.sina.cn
 127.0.0.1 web.da.mgtv.com
 127.0.0.1 web.data.pplive.com
