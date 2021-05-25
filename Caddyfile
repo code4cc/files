@@ -16,5 +16,5 @@ https://download.tr0jan.xyz {
   gzip
   tls /root/.acme.sh/tr0jan.xyz/tr0jan.xyz.cer /root/.acme.sh/tr0jan.xyz/tr0jan.xyz.key
   timeouts none
-  proxy / http://127.0.0.1:8080
+  proxy / localhost:8080
 }
