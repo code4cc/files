@@ -1,0 +1,17 @@
+https://tr0jan.xyz {
+ gzip
+ basicauth / cc admin
+ tls /root/.acme.sh/tr0jan.xyz/tr0jan.xyz.cer /root/.acme.sh/tr0jan.xyz/tr0jan.xyz.key
+ proxy / https://www.bingimg.cn/
+}
+https://ariang.tr0jan.xyz {
+        root /root/Ariang
+        gzip
+        timeouts 0
+        tls chenjiepeng4net@gmail.com 
+}
+https://download.tr0jan.xyz {
+        gzip
+        tls chenjiepeng4net@gmail.com 
+        proxy / http://127.0.0.1:8099
+}
