@@ -26,11 +26,11 @@ mkdir /root/Ariang &&mkdir /root/Ariang/download
 
 curl -fsSL https://raw.githubusercontent.com/filebrowser/get/master/get.sh | bash
 
-cd /root/Ariang &&filebrowser config init
+cd /root/Ariang &&filebrowser config init &&filebrowser config set --auth.method=noauth
 
 wget -O /etc/supervisor/conf.d/supervisor.conf https://raw.githubusercontent.com/code4cc/files/main/supervisor.conf &&supervisorctl update
 
-wget https://github.com/mayswind/AriaNg-DailyBuild/archive/master.zip &&unzip m*zip && mv AriaNg-DailyBuild-master/* Ariang/ &&rm -r AriaN*
+wget https://github.com/mayswind/AriaNg-DailyBuild/archive/master.zip &&unzip m*zip &&rm m*zip && mv AriaNg-DailyBuild-master/* Ariang/ &&rm -r AriaN*
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 安装SSR并设置开机启动
