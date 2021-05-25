@@ -22,11 +22,11 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/code4cc/files/m
 
 wget -O /usr/local/caddy/Caddyfile https://raw.githubusercontent.com/code4cc/files/main/Caddyfile
 
-mkdir /root/Ariang &&mkdir /root/Ariang/download
+mkdir /root/Ariang &&mkdir /root/Ariang/download &&curl -fsSL https://raw.githubusercontent.com/filebrowser/get/master/get.sh | bash
 
-curl -fsSL https://raw.githubusercontent.com/filebrowser/get/master/get.sh | bash
+cd /root/Ariang &&filebrowser config init &&filebrowser -d filebrowser.db config set --baseurl=/root/Ariang/download --locale=zh-cn
 
-cd /root/Ariang &&filebrowser config init &&filebrowser -d /root/Ariang/filebrowser.db config set --auth.method=noauth --baseurl=/root/Ariang/download --locale=zh-cn
+filebrowser -d /root/Ariang/filebrowser.db users add cc cc --perm.admin --scope=download
 
 wget -O /etc/supervisor/conf.d/supervisor.conf https://raw.githubusercontent.com/code4cc/files/main/supervisor.conf &&supervisorctl update
 
