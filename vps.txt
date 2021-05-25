@@ -26,7 +26,7 @@ mkdir /root/Ariang &&mkdir /root/Ariang/download
 
 curl -fsSL https://raw.githubusercontent.com/filebrowser/get/master/get.sh | bash
 
-cd /root/Ariang &&filebrowser config init &&filebrowser config set --auth.method=noauth
+cd /root/Ariang &&filebrowser config init
 
 wget -O /etc/supervisor/conf.d/supervisor.conf https://raw.githubusercontent.com/code4cc/files/main/supervisor.conf &&supervisorctl update
 
