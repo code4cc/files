@@ -12,8 +12,9 @@ https://ariang.tr0jan.xyz {
   tls chenjiepeng4net@gmail.com 
 }
 https://download.tr0jan.xyz {
+  root /root/Ariang/download
   gzip
   tls /root/.acme.sh/tr0jan.xyz/tr0jan.xyz.cer /root/.acme.sh/tr0jan.xyz/tr0jan.xyz.key
   timeouts none
-  proxy http://127.0.0.1:8080
+  proxy / http://127.0.0.1:8080
 }
