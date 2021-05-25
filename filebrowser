@@ -1,0 +1,5 @@
+[program:filebrowser]
+command     = filebrowser -r /root/Ariang/download
+directory   = /root/Ariang/download
+user        = root
+startsecs   = 10
