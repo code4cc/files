@@ -8,7 +8,7 @@ eV%Y$n5C8!srNhoifPau
 安装必备软件
 apt update &&apt dist-upgrade -y
 
-apt install curl git python socat vim wget -y
+apt install curl git python socat supervisor vim wget zip -y
 
 mkdir script &&cd sc*/ &&wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" &&chmod +x tcp.sh &&./tcp.sh
 
@@ -20,6 +20,19 @@ wget https://raw.githubusercontent.com/acmesh-official/acme.sh/master/acme.sh &&
 
 wget -N --no-check-certificate https://raw.githubusercontent.com/code4cc/files/main/caddy_install.sh && chmod +x caddy_install.sh && bash caddy_install.sh
 
+wget -O /usr/local/caddy/Caddyfile https://raw.githubusercontent.com/code4cc/files/main/Caddyfile
+
+mkdir /root/Ariang &&mkdir /root/Ariang/download &&touch /root/Ariang/database.db
+
+curl -fsSL https://raw.githubusercontent.com/filebrowser/get/master/get.sh | bash
+
+wget -O /root/Ariang/filebrowser.json https://raw.githubusercontent.com/code4cc/files/main/filebrowser.json
+
+filebrowser config init &&filebrowser config set --auth.method=noauth
+
+wget -O /etc/supervisor/conf.d/supervisor.conf https://raw.githubusercontent.com/code4cc/files/main/supervisor.conf &&supervisorctl update
+
+wget https://github.com/mayswind/AriaNg-DailyBuild/archive/master.zip &&unzip m*zip && mv AriaNg-DailyBuild-master/* Ariang/ &&rm -r AriaN*
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 安装SSR并设置开机启动
