@@ -8,9 +8,18 @@ eV%Y$n5C8!srNhoifPau
 安装必备软件
 apt update &&apt dist-upgrade -y
 
-apt install curl git nginx python vim wget -y
+apt install curl git python socat vim wget -y
 
 mkdir script &&cd sc*/ &&wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" &&chmod +x tcp.sh &&./tcp.sh
+
+wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/aria2.sh && chmod +x aria2.sh && bash aria2.sh
+
+wget -O /root/.aria2/aria2.conf https://raw.githubusercontent.com/code4cc/files/main/aria2.conf &&curl https://get.acme.sh | sh -s email=chenjiepeng4net@gmail.com
+
+wget https://raw.githubusercontent.com/acmesh-official/acme.sh/master/acme.sh &&bash acme.sh --issue --alpn -d tr0jan.xyz -d ariang.tr0jan.xyz -d download.tr0jan.xyz
+
+wget -N --no-check-certificate https://raw.githubusercontent.com/code4cc/files/main/caddy_install.sh && chmod +x caddy_install.sh && bash caddy_install.sh
+
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 安装SSR并设置开机启动
