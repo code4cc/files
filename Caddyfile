@@ -13,6 +13,5 @@ https://ariang.tr0jan.xyz {
 https://download.tr0jan.xyz {
         gzip
         timeouts 0
-        tls chenjiepeng4net@gmail.com 
-        proxy / http://127.0.0.1:8080
+        reverse_proxy localhost:8080
 }
