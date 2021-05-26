@@ -10,8 +10,8 @@ tun:
   stack: gvisor
   dns-hijack:
     - 198.18.0.2:53
-  macOS-auto-route: true
-  macOS-auto-detect-interface: true
+  auto-route: true
+  auto-detect-interface: true
   
 rule-providers:
   reject:
@@ -104,7 +104,7 @@ rule-providers:
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt"
     path: ./ruleset/lancidr.yaml
     interval: 86400
-    
+
 rules:
   - PROCESS-NAME,v2ray,DIRECT
   - PROCESS-NAME,xray,DIRECT
@@ -154,8 +154,12 @@ rules:
   - DOMAIN,yacd.haishan.me,DIRECT
   - RULE-SET,private,DIRECT
   - RULE-SET,reject,REJECT
-  - RULE-SET,tld-not-cn,🔰国外流量
-  - RULE-SET,gfw,🔰国外流量
-  - RULE-SET,greatfire,🔰国外流量
+  - RULE-SET,icloud,DIRECT
+  - RULE-SET,apple,DIRECT
+  - RULE-SET,google,🔰国外流量
+  - RULE-SET,proxy,🔰国外流量
+  - RULE-SET,direct,DIRECT
   - RULE-SET,telegramcidr,🔰国外流量
-  - MATCH,DIRECT
+  - GEOIP,,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,🔰国外流量
