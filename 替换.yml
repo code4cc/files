@@ -10,8 +10,9 @@ dns:
   enable: true
   enhanced-mode: redir-host
   nameserver:
-    - 223.6.6.6
     - 8.8.8.8
+    - 8.8.4.4
+    - 223.5.5.5
 
 tun:
   enable: true
@@ -257,6 +258,7 @@ rules:
   - DOMAIN-SUFFIX,aol.com,🔰国外流量
   - DOMAIN-SUFFIX,apartmentratings.com,🔰国外流量
   - DOMAIN-SUFFIX,apartments.com,🔰国外流量
+  - DOMAIN-SUFFIX,api.steampowered.com,🔰国外流量
   - DOMAIN-SUFFIX,apigee.com,🔰国外流量
   - DOMAIN-SUFFIX,apk-dl.com,🔰国外流量
   - DOMAIN-SUFFIX,apkfind.com,🔰国外流量
@@ -361,6 +363,7 @@ rules:
   - DOMAIN-SUFFIX,ccgslb.net,🚀直接连接
   - DOMAIN-SUFFIX,cctv.com,🚀直接连接
   - DOMAIN-SUFFIX,cctvpic.com,🚀直接连接
+  - DOMAIN-SUFFIX,cdn.akamai.steamstatic.com,🔰国外流量
   - DOMAIN-SUFFIX,cdn-apple.com,🍎苹果服务
   - DOMAIN-SUFFIX,cdn-apple.com,🚀直接连接
   - DOMAIN-SUFFIX,cdninstagram.com,🔰国外流量
@@ -819,6 +822,7 @@ rules:
   - DOMAIN-SUFFIX,open.cd,🚀直接连接
   - DOMAIN-SUFFIX,oracle.com,🚀直接连接
   - DOMAIN-SUFFIX,orientaldaily.com.my,🔰国外流量
+  - DOMAIN-SUFFIX,origin-a.akamaihd.net,🔰国外流量
   - DOMAIN-SUFFIX,osapublishing.org,🚀直接连接
   - DOMAIN-SUFFIX,oup.com,🚀直接连接
   - DOMAIN-SUFFIX,ourbits.club,🚀直接连接
@@ -948,8 +952,11 @@ rules:
   - DOMAIN-SUFFIX,sspai.com,🚀直接连接
   - DOMAIN-SUFFIX,ssrcloud.org,🔰国外流量
   - DOMAIN-SUFFIX,startpage.com,🔰国外流量
+  - DOMAIN-SUFFIX,static3.cdn.ubi.com,🔰国外流量
   - DOMAIN-SUFFIX,staticdn.net,🚀直接连接
+  - DOMAIN-SUFFIX,steamcdn-a.akamaihd.net,🔰国外流量
   - DOMAIN-SUFFIX,steamcdn-a.akamaihd.net,🚀直接连接
+  - DOMAIN-SUFFIX,steam-chat.com,🔰国外流量
   - DOMAIN-SUFFIX,steam-chat.com,🚀直接连接
   - DOMAIN-SUFFIX,steamcommunity.com,🔰国外流量
   - DOMAIN-SUFFIX,steamcontent.com,🚀直接连接
@@ -962,6 +969,7 @@ rules:
   - DOMAIN-SUFFIX,steemitwallet.com,🔰国外流量
   - DOMAIN-SUFFIX,storage.live.com,🔰国外流量
   - DOMAIN-SUFFIX,storage.msn.com,🔰国外流量
+  - DOMAIN-SUFFIX,store.steampowered.com,🔰国外流量
   - DOMAIN-SUFFIX,streetvoice.com,🔰国外流量
   - DOMAIN-SUFFIX,superpages.com,🔰国外流量
   - DOMAIN-SUFFIX,supertop.co,🔰国外流量
@@ -1095,6 +1103,7 @@ rules:
   - DOMAIN-SUFFIX,worldscientific.com,🚀直接连接
   - DOMAIN-SUFFIX,wsj.com,🔰国外流量
   - DOMAIN-SUFFIX,wsj.net,🔰国外流量
+  - DOMAIN-SUFFIX,www.steamcommunity.com,🔰国外流量
   - DOMAIN-SUFFIX,x.company,🔰国外流量
   - DOMAIN-SUFFIX,x-art.com,🔰国外流量
   - DOMAIN-SUFFIX,xboxlive.com,🔰国外流量
@@ -1263,3 +1272,4 @@ rules:
   - RULE-SET,telegramcidr,✈️Telegram
   
   - MATCH,⚓️其他流量
+  
