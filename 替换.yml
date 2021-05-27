@@ -6,7 +6,6 @@ mode: rule
 log-level: silent
 external-controller: '0.0.0.0:9090'
 secret: ''
-
 dns:
   enable: true
   enhanced-mode: redir-host
@@ -113,7 +112,7 @@ rule-providers:
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt"
     path: ./ruleset/lancidr.yaml
     interval: 86400
-	
+
 rules:
   - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,🎬国外媒体
   - DOMAIN,abematv.akamaized.net,🎬国外媒体
@@ -1207,7 +1206,6 @@ rules:
   - IP-CIDR6,fd00::/8,DIRECT,no-resolve
   - IP-CIDR6,fe80::/10,DIRECT,no-resolve
   
-  - MATCH,️🔰国外流量
   - GEOIP,CN,DIRECT
   
   - PROCESS-NAME,aria2c,DIRECT
@@ -1263,3 +1261,5 @@ rules:
   - RULE-SET,proxy,🔰国外流量
   - RULE-SET,reject,REJECT
   - RULE-SET,telegramcidr,✈️Telegram
+  
+  - MATCH,⚓️其他流量
