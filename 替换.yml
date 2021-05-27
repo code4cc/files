@@ -195,6 +195,8 @@ rules:
   - DOMAIN-KEYWORD,uk-live,🎬国外媒体
   - DOMAIN-KEYWORD,voddazn,🎬国外媒体
   - DOMAIN-KEYWORD,wikileaks,🔰国外流量
+  - DOMAIN-KEYWORD,tr0jan,🚀直接连接
+
   
   - DOMAIN-SUFFIX,0rz.tw,🔰国外流量
   - DOMAIN-SUFFIX,126.net,🚀直接连接
