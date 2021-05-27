@@ -10,9 +10,9 @@ dns:
   enable: true
   enhanced-mode: redir-host
   nameserver:
+    - 223.5.5.5
     - 8.8.8.8
     - 8.8.4.4
-    - 223.5.5.5
 
 tun:
   enable: true
@@ -1094,6 +1094,7 @@ rules:
   - DOMAIN-SUFFIX,windowsupdate.com,🚀直接连接
   - DOMAIN-SUFFIX,winudf.com,🔰国外流量
   - DOMAIN-SUFFIX,wire.com,🔰国外流量
+  - DOMAIN-SUFFIX,wmsjsteam.com,🔰国外流量
   - DOMAIN-SUFFIX,wn.com,🔰国外流量
   - DOMAIN-SUFFIX,wolframalpha.com,🔰国外流量
   - DOMAIN-SUFFIX,wordpress.com,🔰国外流量
@@ -1214,9 +1215,7 @@ rules:
   - IP-CIDR6,fc00::/7,DIRECT,no-resolve
   - IP-CIDR6,fd00::/8,DIRECT,no-resolve
   - IP-CIDR6,fe80::/10,DIRECT,no-resolve
-  
-  - GEOIP,CN,DIRECT
-  
+
   - PROCESS-NAME,aria2c,DIRECT
   - PROCESS-NAME,aria2c.exe,DIRECT
   - PROCESS-NAME,BitComet.exe,DIRECT
@@ -1271,4 +1270,5 @@ rules:
   - RULE-SET,reject,REJECT
   - RULE-SET,telegramcidr,✈️Telegram
   
+  - GEOIP,CN,DIRECT
   - MATCH,⚓️其他流量
