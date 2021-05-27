@@ -1207,7 +1207,7 @@ rules:
   - IP-CIDR6,fd00::/8,DIRECT,no-resolve
   - IP-CIDR6,fe80::/10,DIRECT,no-resolve
   
-  - MATCH,️⚓️其他流量
+  - MATCH,️🔰国外流量
   - GEOIP,CN,DIRECT
   
   - PROCESS-NAME,aria2c,DIRECT
@@ -1263,4 +1263,3 @@ rules:
   - RULE-SET,proxy,🔰国外流量
   - RULE-SET,reject,REJECT
   - RULE-SET,telegramcidr,✈️Telegram
-
