@@ -961,10 +961,10 @@ rules:
   - DOMAIN-SUFFIX,steamcommunity.com,🔰国外流量
   - DOMAIN-SUFFIX,steamcontent.com,🚀直接连接
   - DOMAIN-SUFFIX,steamgames.com,🚀直接连接
-  - DOMAIN-SUFFIX,steampowered.com,🚀直接连接
-  - DOMAIN-SUFFIX,steamstat.us,🚀直接连接
-  - DOMAIN-SUFFIX,steamstatic.com,🚀直接连接
-  - DOMAIN-SUFFIX,steamusercontent.com,🚀直接连接
+  - DOMAIN-SUFFIX,steampowered.com,🔰国外流量
+  - DOMAIN-SUFFIX,steamstat.us,🔰国外流量
+  - DOMAIN-SUFFIX,steamstatic.com,🔰国外流量
+  - DOMAIN-SUFFIX,steamusercontent.com,🔰国外流量
   - DOMAIN-SUFFIX,steemit.com,🔰国外流量
   - DOMAIN-SUFFIX,steemitwallet.com,🔰国外流量
   - DOMAIN-SUFFIX,storage.live.com,🔰国外流量
@@ -1272,4 +1272,3 @@ rules:
   - RULE-SET,telegramcidr,✈️Telegram
   
   - MATCH,⚓️其他流量
-  
