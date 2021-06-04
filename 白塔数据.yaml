@@ -1,4 +1,8 @@
-#订阅链接 https://lygvpn.xyz/link/PPBtMs5CQDacX8At?clash=1
+#白塔订阅链接
+#https://lygvpn.xyz/link/PPBtMs5CQDacX8At?clash=1
+#https://lygvpn.xyz/link/PPBtMs5CQDacX8At?list=shadowrocket
+#Eden
+#https://3tz.cc/api/v1/client/subscribe?token=954366c7b08703c6a6306dfaa832fecc
 
 port: 7890
 socks-port: 7891
@@ -7,15 +11,16 @@ allow-lan: false
 mode: rule
 log-level: silent
 external-controller: '0.0.0.0:9090'
-secret: ''
 dns:
-  enable: true
-  ipv6: false
-  enhanced-mode: redir-host
-  nameserver:
-    - 223.5.5.5
-    - 8.8.8.8
-    - 8.8.4.4
+    enable: true
+    ipv6: false
+    default-nameserver: [223.5.5.5, 119.29.29.29]
+    enhanced-mode: redir-host
+    fake-ip-range: 198.18.0.1/16
+    use-hosts: true
+    nameserver: ['https://doh.pub/dns-query']
+    fallback: ['tls://1.0.0.1:853', 'https://cloudflare-dns.com/dns-query', 'https://dns.google/dns-query']
+    fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 
 tun:
   enable: true
@@ -170,5 +175,46 @@ rules:
   - RULE-SET,gfw,🔰国外流量
   - RULE-SET,greatfire,🔰国外流量
   - RULE-SET,telegramcidr,🔰国外流量
+  - DOMAIN-KEYWORD,-cn,DIRECT
+  - DOMAIN-KEYWORD,admarvel,REJECT
+  - DOMAIN-KEYWORD,admaster,REJECT
+  - DOMAIN-KEYWORD,adsage,REJECT
+  - DOMAIN-KEYWORD,adservice,REJECT
+  - DOMAIN-KEYWORD,adsmogo,REJECT
+  - DOMAIN-KEYWORD,adsrvmedia,REJECT
+  - DOMAIN-KEYWORD,adwords,REJECT
+  - DOMAIN-KEYWORD,alicdn,DIRECT
+  - DOMAIN-KEYWORD,alipay,DIRECT
+  - DOMAIN-KEYWORD,amazon,🔰国外流量
+  - DOMAIN-KEYWORD,baidu,DIRECT
+  - DOMAIN-KEYWORD,blogspot,🔰国外流量
+  - DOMAIN-KEYWORD,-cn,DIRECT
+  - DOMAIN-KEYWORD,domob,REJECT
+  - DOMAIN-KEYWORD,dropbox,🔰国外流量
+  - DOMAIN-KEYWORD,duomeng,REJECT
+  - DOMAIN-KEYWORD,dwtrack,REJECT
+  - DOMAIN-KEYWORD,facebook,🔰国外流量
+  - DOMAIN-KEYWORD,github,🔰国外流量
+  - DOMAIN-KEYWORD,gmail,🔰国外流量
+  - DOMAIN-KEYWORD,google,🔰国外流量
+  - DOMAIN-KEYWORD,guanggao,REJECT
+  - DOMAIN-KEYWORD,instagram,🔰国外流量
+  - DOMAIN-KEYWORD,lianmeng,REJECT
+  - DOMAIN-KEYWORD,mopub,REJECT
+  - DOMAIN-KEYWORD,officecdn,DIRECT
+  - DOMAIN-KEYWORD,omgmta,REJECT
+  - DOMAIN-KEYWORD,openx,REJECT
+  - DOMAIN-KEYWORD,partnerad,REJECT
+  - DOMAIN-KEYWORD,pingfore,REJECT
+  - DOMAIN-KEYWORD,supersonicads,REJECT
+  - DOMAIN-KEYWORD,taobao,DIRECT
+  - DOMAIN-KEYWORD,twitter,🔰国外流量
+  - DOMAIN-KEYWORD,uedas,REJECT
+  - DOMAIN-KEYWORD,umeng,REJECT
+  - DOMAIN-KEYWORD,usage,REJECT
+  - DOMAIN-KEYWORD,whatsapp,🔰国外流量
+  - DOMAIN-KEYWORD,wlmonitor,REJECT
+  - DOMAIN-KEYWORD,youtube,🔰国外流量
+  - DOMAIN-KEYWORD,zjtoolbar,REJECT
+  - GEOIP,CN,DIRECT
   - MATCH,DIRECT
-
